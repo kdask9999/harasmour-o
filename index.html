@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070707" />
+  <meta name="description" content="10º Leilão O Tambor do Amanhã — conheça o Lote 07, 3P Baby Riff." />
+  <title>3P Baby Riff | O Tambor do Amanhã</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#070707;--paper:#f4efe6;--orange:#ef7417;--brown:#7b3f20;--muted:#a49c92;--line:rgba(239,116,23,.36)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:Montserrat,Arial,sans-serif;overflow-x:hidden}body::selection{background:var(--orange);color:#000}
+    .grain{position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
+    .nav{position:fixed;inset:0 0 auto;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:22px clamp(20px,5vw,72px);mix-blend-mode:difference}.brand{font:600 1.1rem/1 Cormorant Garamond,serif;letter-spacing:.16em;text-transform:uppercase}.nav a{color:white;text-decoration:none;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}.nav-line{width:48px;height:1px;background:white;margin-right:14px;display:inline-block;vertical-align:middle}
+    .hero{height:100svh;min-height:680px;position:relative;display:grid;align-items:end;overflow:hidden}.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.88) contrast(1.07)}.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.76),rgba(0,0,0,.12) 62%),linear-gradient(0deg,#070707 0,transparent 36%,rgba(0,0,0,.18))}.hero-copy{position:relative;z-index:2;padding:0 clamp(22px,8vw,120px) 11vh;max-width:1050px}.eyebrow{display:flex;align-items:center;gap:14px;color:var(--orange);font-size:.78rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase}.eyebrow::before{content:"";width:52px;height:1px;background:var(--orange)}h1,h2,h3{font-family:Cormorant Garamond,serif;font-weight:500;margin:0}.hero h1{font-size:clamp(4rem,10vw,9rem);line-height:.75;letter-spacing:-.045em;margin:28px 0}.hero h1 small{display:block;font:400 clamp(.9rem,1.5vw,1.2rem)/1.4 Montserrat,sans-serif;letter-spacing:.2em;text-transform:uppercase;margin-top:34px;color:#ddd}.hero-meta{display:flex;gap:34px;align-items:center;color:#ddd;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase}.scroll{position:absolute;right:clamp(24px,5vw,72px);bottom:9vh;z-index:3;writing-mode:vertical-rl;font-size:.65rem;letter-spacing:.24em;text-transform:uppercase;color:#ddd;display:flex;align-items:center;gap:12px}.scroll::after{content:"";height:72px;width:1px;background:linear-gradient(var(--orange),transparent);animation:pulse 1.8s ease-in-out infinite}
+    .section{padding:clamp(90px,12vw,170px) clamp(22px,8vw,120px)}.intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:9vw;align-items:start}.kicker{color:var(--orange);letter-spacing:.2em;text-transform:uppercase;font-size:.73rem}.intro h2,.feature h2{font-size:clamp(3rem,7vw,7rem);line-height:.9;margin-top:18px}.intro-copy{padding-top:55px;max-width:660px}.intro-copy p{color:#c9c2ba;font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.9;font-weight:300}.accent{color:var(--orange)}
+    .cinema{position:relative;height:min(82vh,900px);margin:0 clamp(12px,3vw,42px);overflow:hidden;border-radius:2px}.cinema img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transform:scale(1.06);transition:transform 1.5s cubic-bezier(.2,.8,.2,1)}.cinema.visible img{transform:scale(1)}.cinema::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.58),transparent 62%),linear-gradient(0deg,rgba(0,0,0,.75),transparent 45%)}.cinema-copy{position:absolute;z-index:2;left:clamp(24px,7vw,100px);bottom:clamp(28px,8vw,100px)}.cinema-copy span{font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;color:var(--orange)}.cinema-copy h2{font-size:clamp(3.4rem,8vw,8rem);line-height:.82;margin-top:18px}.facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:30px}.facts div{border-left:1px solid var(--orange);padding-left:14px}.facts b{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:#aaa;margin-bottom:7px}.facts strong{font:500 1.35rem Cormorant Garamond,serif}
+    .story{display:grid;grid-template-columns:1fr 1fr;min-height:92vh;align-items:stretch}.story-media{position:relative;overflow:hidden}.story-media video{width:100%;height:100%;object-fit:cover}.story-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 70%,#070707)}.story-copy{display:flex;flex-direction:column;justify-content:center;padding:10vw 8vw 10vw 7vw}.quote{font:400 clamp(2.2rem,4vw,4.3rem)/1.03 Cormorant Garamond,serif;margin:28px 0}.story-copy p{color:#aaa;line-height:1.9;max-width:520px}.statement{font-size:.84rem;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-top:28px}
+    .pedigree{background:#0c0b0a;position:relative}.pedigree::before{content:"3P";position:absolute;right:-.03em;top:-.12em;font:700 min(35vw,430px)/1 Cormorant Garamond,serif;color:rgba(255,255,255,.018)}.pedigree-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:70px}.pedigree h2{font-size:clamp(3.2rem,7vw,6.5rem)}.tree{max-width:1050px;margin:auto;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.branch{display:grid;grid-template-columns:1fr 1fr 1.2fr;align-items:center;min-height:150px;border-bottom:1px solid rgba(255,255,255,.09)}.branch:last-child{border-bottom:0}.sire{color:var(--orange);font:600 clamp(1.3rem,2.2vw,2rem) Cormorant Garamond,serif;text-transform:uppercase}.parent{font:500 clamp(1.2rem,2vw,1.7rem) Cormorant Garamond,serif}.ancestors{color:#aaa;font-size:.82rem;line-height:2.1}.ancestors span{display:block;border-bottom:1px solid rgba(255,255,255,.16)}
+    .event{position:relative;min-height:95svh;display:grid;place-items:center;text-align:center;overflow:hidden}.event video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.event::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.5);box-shadow:inset 0 0 180px #000}.event-copy{position:relative;z-index:2;padding:30px}.event-mark{font:600 clamp(4rem,10vw,10rem)/.75 Cormorant Garamond,serif}.event h2{font-size:clamp(3rem,7vw,7.2rem);line-height:.82;margin:35px 0}.event p{letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;line-height:2}.date{color:var(--orange);font-weight:600}.button{display:inline-flex;align-items:center;justify-content:center;margin-top:28px;padding:18px 30px;border:1px solid var(--orange);color:#fff;text-decoration:none;font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;transition:.35s}.button:hover{background:var(--orange);color:#000}.footer{padding:35px clamp(22px,8vw,120px);display:flex;justify-content:space-between;border-top:1px solid #1d1d1d;color:#777;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase}
+    .reveal{opacity:0;transform:translateY(38px);transition:opacity .9s ease,transform .9s ease}.reveal.visible{opacity:1;transform:none}@keyframes pulse{50%{opacity:.28;transform:scaleY(.7)}}
+    @media(max-width:760px){.nav-line{display:none}.hero{min-height:640px}.hero video{object-position:56% center}.hero-copy{padding-bottom:12vh}.hero h1{font-size:4.3rem}.hero-meta{gap:14px;flex-wrap:wrap}.scroll{display:none}.intro,.story{grid-template-columns:1fr}.intro-copy{padding-top:0}.cinema{height:78svh}.cinema img{object-position:43% center}.story-media{height:72svh}.story-media::after{background:linear-gradient(0deg,#070707,transparent 35%)}.story-copy{padding:80px 24px}.pedigree-head{align-items:start;flex-direction:column}.branch{grid-template-columns:1fr;gap:18px;padding:30px 0}.footer{gap:16px;flex-direction:column}.event h2{font-size:3.5rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.cinema img{transform:none}.scroll::after{animation:none}}
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <nav class="nav"><div class="brand">O Tambor do Amanhã</div><a href="#lote"><span class="nav-line"></span>Lote 07</a></nav>
+  <header class="hero">
+    <video autoplay muted loop playsinline poster="assets/leilao-identidade.jpg"><source src="assets/cavalo.mp4" type="video/mp4"></video>
+    <div class="hero-copy reveal">
+      <div class="eyebrow">10º Leilão</div>
+      <h1>3P Baby Riff<small>Uma pintura. Uma promessa. Uma campeã.</small></h1>
+      <div class="hero-meta"><span>Lote 07</span><span>Quarto de Milha PO</span><span>Fêmea • 22/10/2023</span></div>
+    </div>
+    <div class="scroll">Descubra</div>
+  </header>
+
+  <main>
+    <section class="section intro reveal">
+      <div><div class="kicker">O lote que chama atenção</div><h2>Nascida para<br><span class="accent">marcar época.</span></h2></div>
+      <div class="intro-copy"><p>Ela é irmã própria da Riff Zorrero (16.4), irmã materna da 3P Burn It Down (16.2) e irmã de cinco craques de 16 segundos.</p><p>Craque montada, geração P27 e <span class="accent">100% disponível ao mercado.</span></p></div>
+    </section>
+
+    <section id="lote" class="cinema reveal">
+      <img src="assets/lote-07-perfil.jpg" alt="3P Baby Riff, égua Quarto de Milha castanha do Lote 07" />
+      <div class="cinema-copy"><span>Lote 07</span><h2>3P Baby Riff</h2><div class="facts"><div><b>Registro</b><strong>P412554</strong></div><div><b>Pelagem</b><strong>Castanho</strong></div><div><b>Criador</b><strong>Haras Mourão</strong></div></div></div>
+    </section>
+
+    <section class="story">
+      <div class="story-media reveal"><img src="assets/lote-07-retrato.jpg" alt="Retrato de 3P Baby Riff selada" style="width:100%;height:100%;object-fit:cover"></div>
+      <div class="story-copy reveal"><div class="kicker">Potência em cada detalhe</div><div class="quote">“Até poderia dizer que ela é irmã própria da Riff Zorrero...”</div><p>Mas podemos resumir assim: ela é craque. Conformação, linhagem e futuro reunidos em uma fêmea excepcional.</p><div class="statement">Só o Haras Mourão mesmo.</div></div>
+    </section>
+
+    <section class="section pedigree">
+      <div class="pedigree-head reveal"><div><div class="kicker">Linhagem</div><h2>Pedigree de<br>excelência.</h2></div><p>Genética consagrada para quem busca velocidade, funcionalidade e futuro.</p></div>
+      <div class="tree reveal">
+        <div class="branch"><div class="sire">El Shady Zorrero</div><div class="parent">Shady Leo<br>El Annie Bell</div><div class="ancestors"><span>Shady Apolo Bars × Miss Tonta Leo</span><span>El Zorrero × Two Annie Bell</span></div></div>
+        <div class="branch"><div class="sire">Riff Ta Fame</div><div class="parent">Dash Ta Fame<br>Dashin Sandy</div><div class="ancestors"><span>First Down Dash × Sudden Fame</span><span>Streakin Dash × Synchrocept</span></div></div>
+      </div>
+    </section>
+
+    <section class="event">
+      <video autoplay muted loop playsinline poster="assets/leilao-identidade.jpg"><source src="assets/abertura-x.mp4" type="video/mp4"></video>
+      <div class="event-copy reveal"><div class="event-mark">X</div><div class="kicker">10º Leilão</div><h2>O Tambor<br>do Amanhã</h2><p>Haras Três Pinheiros • Taquarivaí, SP<br><span class="date">11 e 12 de setembro de 2026</span></p><a class="button" href="#lote">Rever o Lote 07</a></div>
+    </section>
+  </main>
+  <footer class="footer"><span>10º Leilão O Tambor do Amanhã</span><span>Haras Mourão • Lote 07</span></footer>
+  <script>
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.14});
+    document.querySelectorAll('.reveal,.cinema').forEach(el=>observer.observe(el));
+    window.addEventListener('load',()=>document.querySelector('.hero-copy').classList.add('visible'));
+  </script>
+</body>
+</html>
