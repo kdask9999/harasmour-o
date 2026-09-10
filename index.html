@@ -30,6 +30,11 @@
   <nav class="nav"><div class="brand">O Tambor do Amanhã</div><a href="#lote"><span class="nav-line"></span>Lote 07</a></nav>
   <header class="hero">
     <video autoplay muted loop playsinline poster="assets/leilao-identidade.jpg"><source src="assets/cavalo.mp4" type="video/mp4"></video>
+    <div class="hero-copy reveal">
+      <div class="eyebrow">10º Leilão</div>
+      <h1>3P Baby Riff<small>Uma pintura. Uma promessa. Uma campeã.</small></h1>
+      <div class="hero-meta"><span>Lote 07</span><span>Quarto de Milha PO</span><span>Fêmea • 22/10/2023</span></div>
+    </div>
     <div class="scroll">Descubra</div>
   </header>
 
@@ -66,6 +71,7 @@
   <script>
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.14});
     document.querySelectorAll('.reveal,.cinema').forEach(el=>observer.observe(el));
+    window.addEventListener('load',()=>document.querySelector('.hero-copy').classList.add('visible'));
   </script>
 </body>
 </html>
