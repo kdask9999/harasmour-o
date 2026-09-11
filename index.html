@@ -30,7 +30,7 @@
   <div class="top-banner"><img src="assets/topo-leilao-20260910.jpg" alt="Banner oficial do leilão"></div>
   <div class="grain"></div>
   <header class="hero">
-    <video autoplay muted loop playsinline poster="assets/leilao-identidade.jpg"><source src="assets/cavalo-sela-20260910.mp4" type="video/mp4"></video>
+    <video autoplay muted loop playsinline preload="auto" poster="assets/cavalo-sela-poster-20260911.jpg"><source src="assets/cavalo-sela-20260910.mp4" type="video/mp4"></video>
     <div class="hero-copy reveal">
       <div class="eyebrow">Lote 07</div>
       <h1>3P Baby Riff<small>Uma pintura. Uma promessa. Uma campeã.</small></h1>
@@ -59,7 +59,7 @@
     </section>
 
     <section class="event">
-      <video autoplay muted loop playsinline poster="assets/leilao-identidade.jpg"><source src="assets/abertura-x.mp4" type="video/mp4"></video>
+      <video muted loop playsinline preload="none" poster="assets/leilao-identidade.jpg" data-lazy-video><source data-src="assets/abertura-x.mp4" type="video/mp4"></video>
       <div class="event-copy reveal"><a class="button" href="#">Voltar ao início</a></div>
     </section>
   </main>
@@ -67,6 +67,8 @@
   <script>
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.14});
     document.querySelectorAll('.reveal,.cinema').forEach(el=>observer.observe(el));
+    const videoObserver=new IntersectionObserver((entries,observer)=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const video=entry.target;const source=video.querySelector('source[data-src]');if(source){source.src=source.dataset.src;source.removeAttribute('data-src');video.load()}video.addEventListener('canplay',()=>video.play().catch(()=>{}),{once:true});observer.unobserve(video)}),{rootMargin:'400px 0px'});
+    document.querySelectorAll('video[data-lazy-video]').forEach(video=>videoObserver.observe(video));
     window.addEventListener('load',()=>document.querySelector('.hero-copy').classList.add('visible'));
   </script>
 </body>
